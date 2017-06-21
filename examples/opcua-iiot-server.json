@@ -1,0 +1,35 @@
+[
+  {
+    "id": "2de03fdd.477c2",
+    "type": "OPCUA-IIoT-Server",
+    "z": "e1aa872f.8c2da8",
+    "port": "55388",
+    "endpoint": "",
+    "acceptExternalCommands": true,
+    "maxAllowedSessionNumber": "",
+    "maxConnectionsPerEndpoint": "",
+    "maxAllowedSubscriptionNumber": "",
+    "alternateHostname": "",
+    "name": "",
+    "showStatusActivities": false,
+    "showErrors": false,
+    "allowAnonymous": true,
+    "isAuditing": false,
+    "users": [
+      {
+        "name": "test",
+        "password": "test"
+      },
+      {
+        "name": "peter",
+        "password": "peter"
+      }
+    ],
+    "x": 290,
+    "y": 200,
+    "wires": [
+      [],
+      []
+    ]
+  }
+]

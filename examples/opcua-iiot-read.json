@@ -1,0 +1,121 @@
+[
+  {
+    "id": "311b99f6.d14b86",
+    "type": "OPCUA-IIoT-Inject",
+    "z": "7cd87ec8.b3f94",
+    "injectTypeListener": false,
+    "payload": "",
+    "payloadType": "date",
+    "topic": "ns=4;s=TestReadWrite",
+    "datatype": "Double",
+    "repeat": "2",
+    "crontab": "",
+    "once": false,
+    "startDelay": "",
+    "name": "TestReadWrite",
+    "x": 220,
+    "y": 1080,
+    "wires": [
+      [
+        "c0d97218.31c54"
+      ]
+    ]
+  },
+  {
+    "id": "c0d97218.31c54",
+    "type": "OPCUA-IIoT-Read",
+    "z": "7cd87ec8.b3f94",
+    "attributeId": "13",
+    "maxAge": 1,
+    "depth": 1,
+    "connector": "40577a9d.c41ac4",
+    "name": "",
+    "justValue": true,
+    "multipleRequest": false,
+    "metaDataInject": false,
+    "showStatusActivities": false,
+    "showErrors": false,
+    "x": 410,
+    "y": 1080,
+    "wires": [
+      [
+        "3a403941.0e2a36",
+        "5a6032ac.01739c",
+        "bc8c8a2c.798f68"
+      ]
+    ]
+  },
+  {
+    "id": "bc8c8a2c.798f68",
+    "type": "debug",
+    "z": "7cd87ec8.b3f94",
+    "name": "",
+    "active": false,
+    "console": "false",
+    "complete": "true",
+    "x": 590,
+    "y": 1020,
+    "wires": []
+  },
+  {
+    "id": "5a6032ac.01739c",
+    "type": "debug",
+    "z": "7cd87ec8.b3f94",
+    "name": "",
+    "active": false,
+    "console": "false",
+    "complete": "false",
+    "x": 610,
+    "y": 1060,
+    "wires": []
+  },
+  {
+    "id": "3a403941.0e2a36",
+    "type": "OPCUA-IIoT-Response",
+    "z": "7cd87ec8.b3f94",
+    "name": "",
+    "x": 600,
+    "y": 1100,
+    "wires": [
+      [
+        "4d2f8cb2.93dd84",
+        "7e3dabb2.1e7304"
+      ]
+    ]
+  },
+  {
+    "id": "4d2f8cb2.93dd84",
+    "type": "debug",
+    "z": "7cd87ec8.b3f94",
+    "name": "",
+    "active": false,
+    "console": "false",
+    "complete": "true",
+    "x": 810,
+    "y": 1080,
+    "wires": []
+  },
+  {
+    "id": "7e3dabb2.1e7304",
+    "type": "debug",
+    "z": "7cd87ec8.b3f94",
+    "name": "",
+    "active": false,
+    "console": "false",
+    "complete": "false",
+    "x": 830,
+    "y": 1120,
+    "wires": []
+  },
+  {
+    "id": "40577a9d.c41ac4",
+    "type": "OPCUA-IIoT-Connector",
+    "z": "",
+    "endpoint": "opc.tcp://localhost:55388/",
+    "keepSessionAlive": true,
+    "loginEnabled": true,
+    "name": "LOCAL SERVER",
+    "showStatusActivities": false,
+    "showErrors": false
+  }
+]

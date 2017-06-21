@@ -1,0 +1,128 @@
+[
+  {
+    "id": "e2fc2d3.37762d",
+    "type": "OPCUA-IIoT-Listener",
+    "z": "7cd87ec8.b3f94",
+    "connector": "7fb455ed.ab197c",
+    "action": "events",
+    "queueSize": "1000",
+    "name": "",
+    "justValue": false,
+    "multipleRequest": false,
+    "metaDataInject": false,
+    "showStatusActivities": false,
+    "showErrors": false,
+    "x": 420,
+    "y": 1100,
+    "wires": [
+      [
+        "70e2a1dd.f5fbc",
+        "b8deb34c.40316"
+      ],
+      [
+        "e09f5732.f40d38",
+        "ae6ab1bd.38da4"
+      ]
+    ]
+  },
+  {
+    "id": "70e2a1dd.f5fbc",
+    "type": "debug",
+    "z": "7cd87ec8.b3f94",
+    "name": "",
+    "active": false,
+    "console": "false",
+    "complete": "false",
+    "x": 610,
+    "y": 1100,
+    "wires": []
+  },
+  {
+    "id": "b8deb34c.40316",
+    "type": "debug",
+    "z": "7cd87ec8.b3f94",
+    "name": "",
+    "active": false,
+    "console": "false",
+    "complete": "true",
+    "x": 590,
+    "y": 1060,
+    "wires": []
+  },
+  {
+    "id": "e09f5732.f40d38",
+    "type": "debug",
+    "z": "7cd87ec8.b3f94",
+    "name": "",
+    "active": false,
+    "console": "false",
+    "complete": "true",
+    "x": 590,
+    "y": 1140,
+    "wires": []
+  },
+  {
+    "id": "ae6ab1bd.38da4",
+    "type": "debug",
+    "z": "7cd87ec8.b3f94",
+    "name": "",
+    "active": false,
+    "console": "false",
+    "complete": "false",
+    "x": 610,
+    "y": 1180,
+    "wires": []
+  },
+  {
+    "id": "12f36465.9946fc",
+    "type": "OPCUA-IIoT-Event",
+    "z": "7cd87ec8.b3f94",
+    "eventRoot": "i=2253",
+    "eventType": "i=2041",
+    "queueSize": "100",
+    "usingListener": true,
+    "name": "",
+    "x": 270,
+    "y": 1100,
+    "wires": [
+      [
+        "e2fc2d3.37762d"
+      ]
+    ]
+  },
+  {
+    "id": "196f437e.aba05d",
+    "type": "OPCUA-IIoT-Inject",
+    "z": "7cd87ec8.b3f94",
+    "injectTypeListener": true,
+    "payload": "200",
+    "payloadType": "num",
+    "topic": "",
+    "datatype": "NodeId",
+    "repeat": "",
+    "crontab": "",
+    "once": true,
+    "startDelay": "",
+    "name": "",
+    "x": 140,
+    "y": 1100,
+    "wires": [
+      [
+        "12f36465.9946fc"
+      ]
+    ]
+  },
+  {
+    "id": "7fb455ed.ab197c",
+    "type": "OPCUA-IIoT-Connector",
+    "z": "",
+    "endpoint": "opc.tcp://localhost:55388/",
+    "keepSessionAlive": false,
+    "loginEnabled": true,
+    "securityPolicy": "None",
+    "securityMode": "NONE",
+    "name": "SERVER TWO",
+    "showStatusActivities": false,
+    "showErrors": false
+  }
+]
