@@ -6,16 +6,14 @@
 ![ES_Deploy_Version](http://b.repl.ca/v1/JS_Deploy-ES2015-yellow.png)
 ![NodeJS_Version](http://b.repl.ca/v1/NodeJS-6.x-green.png)
 
-# node-red-contrib-iiot-opcua
+# node-red-contrib-iiot-opcua 
 
-## !!! PUBLIC BETA !!! PUBLIC BETA !!!
-### We start to work on issues from August - Have a great summer time!
+## The IoT/IIoT OPC UA toolbox package for Node-RED based on node-opcua.
 
 [![opcuaiiot64](images/opcua-iiot-logo64-glass.png)](https://www.npmjs.com/package/node-red-contrib-iiot-opcua )
 
 If you like that contributor's package for OPC UA, then please give us your star at [GitHub][3] !
 
-## [Support via Kickstarter][9]
 ## [Support for the project straight away!][2]
 
 ## Code Release GitHub
@@ -162,4 +160,3 @@ for the node-opcua packages and very special for the node-opcua-isa95 package!
 [6]:https://github.com/erossignon
 [7]:https://github.com/biancode/node-red-iiot-opcua-publicbeta/wiki/DEBUG
 [8]:https://github.com/node-opcua/node-opcua/issues/340
-[9]:https://www.kickstarter.com/projects/biancode/node-red-iiot-opc-ua-package
