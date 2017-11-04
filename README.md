@@ -5,6 +5,8 @@
 ![ES_Sourdce_Version](http://b.repl.ca/v1/JS_Source-ES6-yellow.png)
 ![ES_Deploy_Version](http://b.repl.ca/v1/JS_Deploy-ES2015-yellow.png)
 ![NodeJS_Version](http://b.repl.ca/v1/NodeJS-6.x-green.png)
+![NPM download](https://img.shields.io/npm/dm/node-red-contrib-iiot-opcua.svg)
+![NPM version](https://badge.fury.io/js/node-red-contrib-iiot-opcua.png)
 
 # node-red-contrib-iiot-opcua 
 
@@ -91,7 +93,7 @@ The BSD 3-Clause License
 
 [Klaus Landsdorf][1]
 
-That is a whole new Node-RED package started in 2017 based on the node-opcua v1.x and the API documentation.
+That is a whole new Node-RED package started in 2017 based on the node-opcua v0.1.x and the API documentation.
 The old copyrights by Mika Karaila are just to honor his pioneer work in the years 2015/2016 for Node-RED and OPC UA.
 
 ### Important
